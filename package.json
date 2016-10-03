@@ -14,7 +14,7 @@
   "main": ".dist/index.js",
   "scripts": {
     "build": "grunt build",
-    "cover": "istanbul -- cover grunt test && codecov",
+    "cover": "istanbul -- cover npm test && codecov",
     "prepublish": "grunt prepublish",
     "test": "grunt test",
     "lint": "grunt lint"
