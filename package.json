@@ -14,7 +14,7 @@
   "main": ".dist/index.js",
   "scripts": {
     "build": "grunt build",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha && codecov",
+    "cover": "istanbul -- cover grunt test && codecov",
     "prepublish": "grunt prepublish",
     "test": "grunt test",
     "lint": "grunt lint"
