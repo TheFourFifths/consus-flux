@@ -28,6 +28,9 @@ module.exports = function(grunt) {
         coveralls: {
             options: {
                 force: false
+            },
+            foo: {
+                src: 'coverage/*.info'
             }
         },
         jshint: {
