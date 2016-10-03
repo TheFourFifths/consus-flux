@@ -2,4 +2,5 @@
 .test
 node_modules
 npm-debug.log*
-coverage
+coverage*
+.nyc_output

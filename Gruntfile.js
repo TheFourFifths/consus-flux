@@ -25,14 +25,6 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        coveralls: {
-            options: {
-                force: false
-            },
-            foo: {
-                src: 'coverage/*.info'
-            }
-        },
         jshint: {
             options: {
                 jshintrc: '.jshintrc'
@@ -62,7 +54,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-cli');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-coveralls');
 
     grunt.registerTask('build', ['clean:dist', 'babel:dist']);
     grunt.registerTask('lint', ['jshint']);
