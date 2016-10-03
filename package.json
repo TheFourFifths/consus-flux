@@ -14,7 +14,7 @@
   "main": ".dist/index.js",
   "scripts": {
     "build": "grunt build",
-    "cover": "istanbul cover --include-all-sources npm test && codecov",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "prepublish": "grunt prepublish",
     "test": "grunt test",
     "lint": "grunt lint"
@@ -44,6 +44,7 @@
     "grunt-mocha-cli": "^2.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.1.0",
+    "nyc": "^8.3.0",
     "sinon": "^1.17.6"
   }
 }
