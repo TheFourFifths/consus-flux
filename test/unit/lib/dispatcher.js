@@ -80,7 +80,7 @@ describe('Dispatcher', () => {
             Dispatcher.handleAction();
             assert.isTrue(spyA.calledOnce);
             assert.isTrue(spyB.calledOnce);
-            Dispatcher.handleAction({});
+            Dispatcher.handleAction();
             assert.isTrue(spyA.calledTwice);
             assert.isTrue(spyB.calledTwice);
         });
