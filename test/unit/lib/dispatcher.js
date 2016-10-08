@@ -77,7 +77,7 @@ describe('Dispatcher', () => {
             let spyB = sinon.spy();
             Dispatcher.register(spyA);
             Dispatcher.register(spyB);
-            Dispatcher.handleAction({});
+            Dispatcher.handleAction();
             assert.isTrue(spyA.calledOnce);
             assert.isTrue(spyB.calledOnce);
             Dispatcher.handleAction({});

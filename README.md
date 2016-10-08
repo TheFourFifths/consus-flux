@@ -15,11 +15,8 @@ Flux modules for the Consus project
 ```javascript
 import { Dispatcher } from 'consus-flux';
 
-Dispatcher.handleAction({
-    type: 'INCREMENT',
-    data: {
-        amount: 5
-    }
+Dispatcher.handleAction('INCREMENT', {
+    amount: 5
 });
 ```
 
