@@ -12,6 +12,9 @@ const ITEM_OFFSET = 2 * RANGE;
  * @return {string}
  */
 export function createAddress(index, type) {
+    if (index < 0) {
+        throw new Error('Index must be at least 0.');
+    }
     if (index >= RANGE) {
         throw new Error('Index must be less than 268435456.');
     }
