@@ -12,10 +12,9 @@ install:
   - npm install
 
 script:
-  - npm test
+  - npm run coverage
 
 after_success:
-  - npm run coverage
   - bash <(curl -s https://codecov.io/bash)
 
 notifications:
