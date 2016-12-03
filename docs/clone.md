@@ -22,9 +22,9 @@ twin;
 }
 */
 
-twin == original;
+twin === original;
 // false
 
-twin.a == original.a;
+twin.a === original.a;
 // false
 ```

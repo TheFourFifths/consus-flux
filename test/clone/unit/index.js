@@ -42,7 +42,7 @@ describe('Clone', () => {
         }
         original.a = 3;
         let twin = clone(original);
-        assert.notEqual(twin, original);
+        assert.notStrictEqual(twin, original);
         assert.strictEqual(twin.toString(), original.toString());
         assert.strictEqual(twin.name, original.name);
         assert.strictEqual(twin.a, 3);
@@ -55,7 +55,7 @@ describe('Clone', () => {
             15
         ];
         let twin = clone(original);
-        assert.notEqual(twin, original);
+        assert.notStrictEqual(twin, original);
         assert.deepEqual(twin, original);
     });
 
@@ -66,7 +66,7 @@ describe('Clone', () => {
             c: 7
         };
         let twin = clone(original);
-        assert.notEqual(twin, original);
+        assert.notStrictEqual(twin, original);
         assert.deepEqual(twin, original);
     });
 
@@ -95,10 +95,10 @@ describe('Clone', () => {
             }
         ];
         let twin = clone(original);
-        assert.notEqual(twin, original);
-        assert.notEqual(twin[6], original[6]);
-        assert.notEqual(twin[6][2], original[6][2]);
-        assert.notEqual(twin[7], original[7]);
+        assert.notStrictEqual(twin, original);
+        assert.notStrictEqual(twin[6], original[6]);
+        assert.notStrictEqual(twin[6][2], original[6][2]);
+        assert.notStrictEqual(twin[7], original[7]);
         assert.deepEqual(twin, original);
     });
 
@@ -127,10 +127,10 @@ describe('Clone', () => {
             }
         };
         let twin = clone(original);
-        assert.notEqual(twin, original);
-        assert.notEqual(twin.g, original.g);
-        assert.notEqual(twin.g[2], original.g[2]);
-        assert.notEqual(twin.h, original.h);
+        assert.notStrictEqual(twin, original);
+        assert.notStrictEqual(twin.g, original.g);
+        assert.notStrictEqual(twin.g[2], original.g[2]);
+        assert.notStrictEqual(twin.h, original.h);
         assert.deepEqual(twin, original);
     });
 

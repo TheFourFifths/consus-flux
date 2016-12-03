@@ -18,7 +18,7 @@ export default function clone(original) {
     case 'function':
         return cloneFunction(original);
     default:
-        throw new Error('Unkown type: ' + typeof original);
+        throw new Error(`Unkown type:  ${typeof original}`);
     }
 }
 
