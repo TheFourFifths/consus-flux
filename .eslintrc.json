@@ -1,12 +1,18 @@
 {
     "rules": {
+        "comma-spacing": [
+            2,
+            {
+                "before": false,
+                "after": true
+            }
+        ],
         "indent": [
             2,
             4
         ],
-        "quotes": [
-            2,
-            "single"
+        "no-console": [
+            2
         ],
         "semi": [
             2,
